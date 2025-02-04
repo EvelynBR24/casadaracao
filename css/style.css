@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #8d3b00;
+    color: #ffffff;
+}
+main{
+    display: block;
+    margin: 15px;
+}
+/* header */
+#header{
+    display: flex;
+}
+#logo{
+    width: 220px;
+    margin-left: 25px;
+}
+#header > h1{
+    display: flex;
+    padding: 10px;
+    margin: auto 0 auto 20px;
+}
+/* fim doheader */
+
+/* sobre-nos */
+#sobre{
+    justify-content: center;
+}
+#sobre > h2{
+    text-align: center;
+    font-size: 28px;
+}
+#sobre > p{
+    margin: auto 25px auto 25px;
+    font-size: 20px;
+    text-align: center;
+}
+/* fim sobre-nos */
+
+/* produtos */
+#produtos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 35px;
+}
+#produtos > ul{
+    background: #e05e00;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    border: 1px solid rgb(87, 87, 87);
+}
+li{
+    padding: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+.produto{
+    width: 100px;
+}
+li > p{
+    margin: 5px;
+    font-size: 18px;
+}
+span{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+li > a{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 10%;
+    background: rgba(0, 90, 0, 0.842);
+    text-decoration: none;
+}
+/* fim produtos */
+
+/* Contatos */
+#contatos{
+    margin: 70px 0 70px 0;
+    justify-content: center;
+}
+#contatos > p{
+    text-align: center;
+    font-size: 20px;
+}
+p > a{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 5px;
+    background: #471e01;
+    border-radius: 10%;
+    text-decoration: none;
+}
+/* fim Contatos */
+
+/* footer */
+footer{
+    padding: 20px;
+    background: #491e00;
+}
+footer > p{
+    text-align: center;
+    margin-top: 10px;
+}
+/* fim footer */
+
+
+@media (max-width: 768px) {
+    /* header */
+    #header{
+        margin-top: 15px;
+        display: flex;
+    }
+    #logo{
+        width: 120px;
+        margin-left: 25px;
+    }
+    #header > h1{
+        font-size: 20px;
+        display: flex;
+        padding: 10px;
+        margin: auto 0 auto 20px;
+    }
+    /* fim doheader */
+
+    /* produtos */
+    #produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    li > a{
+        display: block;
+        font-size: 15px;
+    }
+    /* fim produtos */
+}
